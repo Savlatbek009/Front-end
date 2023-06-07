@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./windows11/Square150x150Logo.scale-100.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>AS TODO</title>
+  </head>
+
+  <body>
+    <main class="app">
+      <section class="greeting">
+        <h2 class="title">
+          Hi, <input type="text" id="name" placeholder="Name here" />
+        </h2>
+      </section>
+
+      <section class="create-todo">
+        <h3>CREATE A TODO</h3>
+        <form id="new-todo-form">
+          <h4>What's on your todo?</h4>
+          <input
+            type="text"
+            placeholder="Your task"
+            name="content"
+            id="content"
+          />
+
+          <h4>Pick a category</h4>
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="business"
+              />
+              <span class="bubble business"></span>
+              <div>Business</div>
+            </label>
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category2"
+                value="personal"
+              />
+              <span class="bubble personal"></span>
+              <div>Personal</div>
+            </label>
+          </div>
+
+          <input type="submit" value="Add todo" />
+        </form>
+      </section>
+      <!-- End of New Todo -->
+
+      <!-- Todo List -->
+      <section class="todo-list">
+        <h3>TODO LIST</h3>
+        <div class="list" id="todo-list"></div>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/binder.js" type="module"></script>
+  </body>
+</html>
