@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.App {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(45, 45, 45);
+  color: white;
+}
+nav {
+  font-size: xx-large;
+}
+.col {
+  float: left;
+  width: 30%;
+  background: rgb(136, 135, 135);
+  margin: 22px;
+  text-align: start;
+  border-radius: 10px;
+}
+.inputs {
+  height: 60vh;
+  overflow: auto;
+}
+.style {
+  height: 60vh;
+  overflow: auto;
+}
+
+.code {
+  height: 60vh;
+  background: #000;
+  border-radius: 10px;
+  overflow: auto;
+}
+.styles {
+  padding: 10px;
+}
+.codes {
+  color: white;
+  text-align: left;
+  height: calc(60vh - 39px - 59px);
+  font-size: 12px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+.item {
+  margin: 10px;
+  background: #000;
+  color: white;
+  text-align: start;
+  font-size: xx-large;
+  display: flex;
+  margin: 2px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid white;
+}
+nav {
+  background: rgb(0, 126, 244);
+  top: 0;
+  padding: 10px 20px;
+}
+.input-group {
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 100%;
+  padding: 10px;
+}
+.input-group > input {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  display: flex;
+  background: rgb(173, 173, 173);
+  padding: 10px;
+  font-size: smaller;
+  align-items: center;
+  justify-content: space-between;
+}
+.header > img {
+  width: 50px;
+  text-align: start;
+  height: 15px;
+}
+.header > h4 {
+  text-align: center;
+  font-size: xx-large;
+}
+@media (max-width: 500px) {
+  .col {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .App {
+    width: 100%;
+  }
+}
