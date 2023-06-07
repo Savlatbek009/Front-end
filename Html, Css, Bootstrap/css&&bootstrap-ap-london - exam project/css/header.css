@@ -1,0 +1,15 @@
+.red-bg {
+  background: #bb2339;
+}
+
+nav * {
+  color: #fff !important;
+}
+
+.container {
+  width: 100%;
+}
+
+.navbar-nav {
+  flex-grow: 1;
+}

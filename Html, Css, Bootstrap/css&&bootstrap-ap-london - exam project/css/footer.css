@@ -1,0 +1,41 @@
+footer .item {
+  width: 401px;
+  height: 447px;
+  overflow: hidden;
+}
+
+.footer-meal img {
+  width: 401px;
+  height: 447px;
+  border-radius: 14px;
+}
+
+.footer-news {
+  position: relative;
+  bottom: -141px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  z-index: 999;
+  border: 1px solid #fff !important;
+}
+
+.footer-bottom {
+  padding-top: 202px !important;
+}
+
+#update,
+.footer-galery {
+  margin-bottom: -120px;
+}
+
+@media (max-width: 720px) {
+  .footer-news {
+    width: 90%;
+    margin-bottom: -200px;
+    margin: 0 auto;
+  }
+  .footer-news .w-50,
+  .footer-news input,
+  .footer-news button {
+    width: 100% !important;
+  }
+}
