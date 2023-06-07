@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"); /* Common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.clr {
+  clear: both;
+}
+
+/* Home */
+
+.main {
+  background: url("../assists/home-bg.jpg");
+  height: calc(100vh - 68px);
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Owl */
+.owl-nav {
+  position: absolute;
+  top: -90px;
+  right: 0;
+}
+
+.owl-prev,
+.owl-next {
+  width: 50px;
+  height: 50px;
+  font-size: x-large;
+  background: #797979 !important;
+  color: #fff !important;
+}
+
+/* Loader */
+
+.loader {
+  position: fixed;
+  z-index: 9999999999;
+  width: 100%;
+  height: 100vh;
+  background: #fdfdfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #000000;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* Google translate */
+
+#google_translate_element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.goog-te-combo {
+  display: block !important;
+  padding: 10px 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+@keyframes lds-default {
+  0%,
+  20%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@media (max-width: 800px) {
+  .mini-container {
+    width: 90%;
+  }
+  .owl-next,
+  .owl-prev {
+    width: 30px;
+    height: 30px;
+  }
+  .owl-nav {
+    top: -70px;
+  }
+}

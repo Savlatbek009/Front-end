@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Common */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.clr {
+  clear: both;
+}
+
+/* Home */
+
+.main {
+  background: url("../assists/home-bg.jpg");
+  height: calc(100vh - 68px);
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Owl */
+.owl-nav {
+  position: absolute;
+  top: -90px;
+  right: 0;
+}
+
+.owl-prev,
+.owl-next {
+  width: 50px;
+  height: 50px;
+  font-size: x-large;
+  background: #797979 !important;
+  color: #fff !important;
+}
+
+/* Loader */
+
+.loader {
+  position: fixed;
+  z-index: 9999999999;
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+/* Google translate */
+#google_translate_element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.goog-te-combo {
+  display: block !important;
+  padding: 10px 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+@keyframes lds-default {
+  0%,
+  20%,
+  80%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
+
+@media (max-width: 800px) {
+  .mini-container {
+    width: 90%;
+  }
+  .owl-next,
+  .owl-prev {
+    width: 30px;
+    height: 30px;
+  }
+  .owl-nav {
+    top: -70px;
+  }
+}
