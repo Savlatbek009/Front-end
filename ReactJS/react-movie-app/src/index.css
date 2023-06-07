@@ -1,0 +1,32 @@
+.content {
+  min-height: calc(100vh - 70px - 42px);
+}
+.clr {
+  clear: both;
+}
+.movie {
+  float: left;
+  width: 31.33%;
+  margin: 1%;
+  box-sizing: border-box;
+}
+.card-img-top {
+  height: 700px;
+}
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .movie {
+    float: left;
+    width: 46%;
+  }
+}
+@media (max-width: 540px) {
+  .movie {
+    float: none;
+    width: 100%;
+  }
+}
