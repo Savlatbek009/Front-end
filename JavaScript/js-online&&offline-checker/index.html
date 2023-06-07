@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        background: #000;
+        color: white;
+      }
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        color: #fff;
+        background: rgb(42, 42, 255);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 10px;
+        font-size: xx-large;
+        font-weight: 600;
+        width: 25%;
+        height: 10vh;
+      }
+      .status {
+        padding: 1rem 2rem;
+        animation: opacity 4s infinite ease-in;
+      }
+      @media (max-width: 800px) {
+        .btn {
+          min-width: max-content;
+        }
+        .status {
+          min-width: max-content;
+        }
+      }
+      @keyframes opacity {
+        0% {
+          color: #000;
+        }
+        25% {
+          color: yellow;
+        }
+        75% {
+          color: red;
+        }
+        100% {
+          color: #000;
+        }
+      }
+    </style>
+    <title>Check online or offline</title>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">Start Check</button>
+      <h1 style="display: none" class="status"></h1>
+    </div>
+
+    <script>
+      const status = document.querySelector(".status");
+      const btn = document.querySelector("button");
+
+      btn.addEventListener("click", function (e) {
+        status.style.display = "block";
+        e.target.style.display = "none";
+      });
+      const online = () => {
+        status.style.background = "green";
+        status.textContent = `You are online 😁 
+        `;
+      };
+      const ofline = () => {
+        status.style.background = "red";
+        status.textContent = `You are offline 😔 
+        `;
+      };
+
+      if (window.navigator.onLine) {
+        online();
+      } else {
+        ofline();
+      }
+
+      window.addEventListener("online", online);
+      window.addEventListener("offline", offline);
+    </script>
+  </body>
+</html>

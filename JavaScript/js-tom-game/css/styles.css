@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+  background: rgb(0, 0, 0);
+  color: white;
+  max-height: 100vh;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.834);
+}
+.navbar > .col-5 {
+  float: left;
+  min-width: 33.33%;
+  height: 59px;
+  padding: 10px;
+  font-size: xx-large;
+  background-color: rgba(169, 169, 169, 0.203);
+  color: black;
+}
+.controllers {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.controllers > .col-3 {
+  float: left;
+  min-width: 25%;
+  text-align: center;
+  padding: 10px;
+  font-size: xx-large;
+  background-color: rgba(169, 169, 169, 0.391);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-3 > i {
+  padding: 10px;
+  background: #000;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.col-5:nth-child(3) {
+  text-align: end;
+}
+.col-5:nth-child(2) {
+  text-align: center;
+}
+.clr {
+  clear: both;
+}
+/* sections styles */
+.home-section {
+  background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eating-room {
+  background: url("https://images.unsplash.com/photo-1614597445336-8a67e9314d91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: block;
+  text-align: center;
+  background-position: bottom;
+}
+.eating-room > img {
+  margin-top: 10vh;
+  text-align: center;
+  width: 150px;
+  height: 200px;
+  margin-bottom: -5vh;
+}
+.ani-moving {
+  animation: moving linear 1s;
+}
+.plates {
+  margin-bottom: -10vh;
+  float: left;
+  width: 33%;
+  margin: 0;
+}
+.toilet-room {
+  background: url("https://images.unsplash.com/photo-1613688684285-472f9bba333d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: block;
+  text-align: center;
+  background-position: bottom;
+  justify-content: center;
+}
+.toilet-room > img {
+  width: 20%;
+  height: 80vh;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+.bed-room {
+  background: url("https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: block;
+  text-align: center;
+  background-position: bottom;
+  justify-content: center;
+}
+.bed-room-re {
+  background: url("https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: block;
+  text-align: center;
+  background-position: bottom;
+  justify-content: center;
+}
+.colm-3 {
+  float: left;
+}
+.colm-3:nth-child(even) {
+  width: 15%;
+}
+.shop-room {
+  width: 90%;
+  margin: 0 auto;
+}
+.col {
+  float: left;
+  width: 33%;
+
+  height: 300px;
+}
+/* response to 500px */
+@media (max-width: 500px) {
+  .col {
+    width: 100%;
+  }
+  .home-section > img,
+  .toilet-room > img {
+    width: 50%;
+    height: 70vh;
+  }
+  .col-3 > i {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: smaller;
+  }
+  .col-5 {
+    width: 20px;
+  }
+  .btns {
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+  }
+  .col-5 > i,
+  h4 {
+    font-size: 20px;
+    padding: 0;
+  }
+  .col-5 > h4 {
+    width: 50px;
+    padding: 0;
+  }
+}
+/* respond to 1300px */
+
+@media (max-width: 1300px) {
+  .colm-3:nth-child(even) {
+    width: 250px;
+    height: 150px;
+  }
+  .colm-3:nth-child(1) {
+    padding-top: -20rem;
+  }
+  .colm-3:nth-child(2) {
+    width: 100px;
+    height: 150px;
+  }
+}
+
+/*  response to 700px */
+@media (max-width: 720px) {
+  .dn {
+    display: none;
+  }
+  .plates {
+    margin-top: 10vh;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .eating-room > .head-tom {
+    width: 50%;
+  }
+  .colm-3:nth-child(even) {
+    width: 70%;
+    height: 100px;
+  }
+  .colm-3:nth-child(1) {
+    padding-top: -20rem;
+  }
+  .colm-3:nth-child(2) {
+    width: 100px;
+    height: 150px;
+  }
+}
+
+/* animations */
+
+@keyframes moving {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
