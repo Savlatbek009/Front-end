@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@keyframes Charging {
+  0% {
+    transition: 0.5s all;
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transition: 0.5s all;
+    opacity: 1;
+  }
+}
+
+html {
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-image: linear-gradient(to left, #27b6cf, #71e8f3, #ffffff);
+  display: flex;
+  margin: 0 !important;
+  justify-content: center;
+  align-items: center;
+}
+.audio {
+  position: absolute;
+}
+.audio audio {
+  background: transparent;
+}
+.card {
+  width: 350px;
+  min-height: max-content;
+  background-color: #838383;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.batteryShape {
+  display: flex;
+  justify-content: center;
+  min-height: 450px;
+  flex-direction: column;
+  align-items: center;
+}
+.batteryBorder {
+  border: 3px solid rgb(255, 255, 255);
+  width: 180px;
+  height: 80px;
+  border-radius: 10px;
+  position: relative;
+}
+.percentage {
+  background: linear-gradient(to right, #55ff37, #2c9200);
+  position: absolute;
+  top: 4px;
+  text-align: center;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border-radius: 5px;
+  width: 50%;
+}
+.percent {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  margin: 10px;
+  color: #fff;
+}
+.isCharging {
+  margin: 40px 0 0;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  animation: Charging 2s backwards infinite;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 550px;
+    height: 550px;
+    margin: 25% auto;
+  }
+  .section::before {
+    position: absolute;
+    bottom: 70%;
+    left: 10%;
+    width: 400px;
+    height: 400px;
+  }
+  .section::after {
+    position: absolute;
+    bottom: 30%;
+    left: 55%;
+    width: 300px;
+    height: 300px;
+  }
+  .isCharging {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 550px;
+    height: 550px;
+    margin: 25% auto;
+  }
+  .section::before {
+    position: absolute;
+    bottom: 70%;
+    left: 0%;
+    width: 400px;
+    height: 400px;
+  }
+  .section::after {
+    position: absolute;
+    bottom: 10%;
+    left: 55%;
+    width: 300px;
+    height: 300px;
+  }
+  .isCharging {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .card {
+    width: 300px;
+    height: 450px;
+    margin: 25% auto;
+  }
+  .section::before {
+    position: absolute;
+    bottom: 70%;
+    left: -30%;
+    width: 300px;
+    height: 300px;
+  }
+  .section::after {
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    width: 230px;
+    height: 230px;
+  }
+  .isCharging {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .card {
+    width: 300px;
+    height: 450px;
+    margin: 25% auto;
+  }
+  .section::before {
+    position: absolute;
+    bottom: 70%;
+    left: -30%;
+    width: 300px;
+    height: 300px;
+  }
+  .section::after {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    width: 200px;
+    height: 200px;
+  }
+  .isCharging {
+    font-size: 20px;
+  }
+}
