@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  transition: 0.5s all;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(143, 12, 231);
+  background: radial-gradient(
+    circle,
+    rgba(143, 12, 231, 1) 0%,
+    rgba(71, 6, 243, 1) 93%,
+    rgba(4, 0, 255, 1) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.notif-perent {
+  position: absolute;
+  width: 100%;
+  top: -1000px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.notif {
+  display: none;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 50px;
+  color: #fff;
+  background: #000;
+}
+.container {
+  width: 600px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.title {
+  -webkit-text-fill-color: transparent;
+  background: #fb3f3f;
+  background: radial-gradient(circle, #30f 0, #b300ff 100%);
+  -webkit-background-clip: text;
+  letter-spacing: 3px;
+}
+textarea {
+  width: 540px;
+  height: 150px;
+  display: block;
+  margin: 20px 0;
+  font-size: 20px;
+  resize: none;
+  outline: 1px solid #30f;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border: 1px solid #000;
+  border-radius: 0 10px 0 10px;
+  width: 10px;
+}
+textarea::-webkit-scrollbar-track {
+  background: #ff0000;
+  width: 10px;
+  border-radius: 0 10px 0 10px;
+}
+textarea::-webkit-scrollbar {
+  background: #000;
+  width: 10px;
+  border-radius: 0 10px 0 10px;
+}
+.active,
+textarea:focus {
+  border: 1px solid #b300ff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.btn_perent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+  justify-content: end;
+  -webkit-text-fill-color: transparent;
+  background: rgb(143, 12, 231);
+  background: radial-gradient(
+    circle,
+    rgba(143, 12, 231, 1) 0%,
+    rgba(71, 6, 243, 1) 93%,
+    rgba(4, 0, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  letter-spacing: 2px;
+}
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  textarea {
+    width: 100%;
+  }
+}
