@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="./images/icon-48x48.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>Weather app</title>
+  </head>
+
+  <body>
+    <div class="app-wrap">
+      <main>
+        <section class="location">
+          <div class="city">Egypt, US</div>
+          <div class="date">Monday 8 June 2021</div>
+        </section>
+        <div class="main-temp">
+          <div class="temp">8<span>°c</span></div>
+          <div class="weather">Fog</div>
+          <div class="hi-low">19°c / 23°c</div>
+        </div>
+      </main>
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="seacrh-box"
+          placeholder="Search..."
+        />
+      </header>
+    </div>
+    <script src="./js/index.js"></script>
+    <script src="./js/binder.js" type="module"></script>
+  </body>
+</html>
