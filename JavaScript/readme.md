@@ -8,3 +8,4 @@
 <h4 align="start">js-pexels - https://pexels-clone-01.netlify.app</h4>
 <h4 align="start">js-wikipedia - https://wikipedia-search-01.netlify.app</h4>
 <h4 align="start">js-voice-to-text - https://as-voice-to-text.netlify.app</h4>
+<h4 align="start">odynovotours.uz - https://odynovotours.uz</h4>
