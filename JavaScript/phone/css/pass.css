@@ -1,0 +1,121 @@
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone-body {
+  width: 270px;
+  height: 490px;
+  border-radius: 10px;
+  background: #00000065;
+  overflow: hidden;
+}
+.page-one,
+.page-two {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  color: #fff !important;
+  height: 490px;
+  border-radius: 10px;
+  background: transparent;
+  text-align: center;
+}
+.page-two {
+  align-items: center;
+}
+.full-date {
+  margin-top: 100px;
+}
+.full-date h1 {
+  font-size: 60px !important;
+  font-weight: 600;
+  margin: 0;
+}
+.full-date p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: -10px 0 0 0;
+}
+.swipe-up {
+  position: absolute;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  bottom: 90px;
+  animation: fade 3s ease-in-out infinite;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+.lock-pass {
+  position: relative;
+  transition: 0.3s all;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  outline: none;
+  border: 1px solid;
+  margin: 10px 0;
+  display: block;
+}
+.lock-pass:focus {
+  box-shadow: rgba(64, 255, 0, 0.635) 0px 5px 15px;
+  border: 1px solid #26ff00;
+}
+.incorrect-password {
+  border: 1px solid #ff0000;
+  animation: fadeIn 0.1s ease-in-out 2;
+}
+.swipe-down {
+  transition: 0.5s all;
+  background: #ff0000;
+  padding: 5px 30px;
+  width: 100%;
+  color: #fff;
+  font-size: x-large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+}
+.swipe-down:hover {
+  letter-spacing: 2px;
+  box-shadow: rgb(255, 3, 3) 0px 5px 15px;
+}
+@keyframes fadeIn {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 10px;
+  }
+  50% {
+    margin-left: 0;
+  }
+  75% {
+    margin-right: 10px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}
+@keyframes fade {
+  0% {
+    bottom: 90px;
+  }
+  25% {
+    bottom: 90px;
+  }
+  50% {
+    bottom: 110px;
+  }
+  75% {
+    bottom: 90px;
+  }
+  100% {
+    bottom: 90px;
+  }
+}
