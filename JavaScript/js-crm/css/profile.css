@@ -1,0 +1,61 @@
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.profil-avatar {
+  width: 40%;
+}
+.profil-avatar img {
+  width: 100%;
+  border-radius: 20px;
+}
+.profil-data h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.profil-data button {
+  padding: 10px 20px;
+  letter-spacing: 1.3px !important;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 5px 0;
+  border: none !important;
+  outline: none !important;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: #008aec;
+}
+.merried {
+  background: #a2a2a2;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.mini-teacher-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0 0 0;
+}
+
+.mini-teacher-div img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+@media (max-width: 700px) {
+  .profile-row {
+    display: block;
+  }
+  .profil-avatar {
+    width: 100%;
+  }
+}

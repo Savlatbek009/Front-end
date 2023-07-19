@@ -1,0 +1,56 @@
+.teachers-row,
+.students-row {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 10px;
+}
+.teacher {
+  transition: 0.5s all;
+  margin: 5px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.teacher:hover {
+  position: relative;
+  transform: scale(1.05);
+  transition: 0.5s all;
+  z-index: 99999999999;
+  background: #1fa2ff;
+  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  color: #fff;
+}
+.teacher-header {
+  text-align: center;
+}
+.teacher-header img {
+  border-radius: 50% !important;
+  width: 128px;
+  height: 128px;
+}
+.teacher-header * {
+  margin: 5px 0;
+}
+.teacher-body p {
+  word-break: break-all;
+}
+@media (max-width: 1200px) {
+  .teachers-row,
+  .students-row {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+  }
+}
+@media (max-width: 800px) {
+  .teachers-row,
+  .students-row {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (max-width: 600px) {
+  .teachers-row,
+  .students-row {
+    grid-template-columns: 100%;
+  }
+}

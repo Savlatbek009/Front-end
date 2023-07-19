@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>STUDENT - TEACHER</title>
+  </head>
+  <body>
+    <div class="loader">
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="
+          margin: auto;
+          background: rgb(255, 255, 255);
+          display: block;
+          shape-rendering: auto;
+        "
+        width="200px"
+        height="200px"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="xMidYMid"
+      >
+        <circle cx="84" cy="50" r="10" fill="#e15b64">
+          <animate
+            attributeName="r"
+            repeatCount="indefinite"
+            dur="0.25s"
+            calcMode="spline"
+            keyTimes="0;1"
+            values="10;0"
+            keySplines="0 0.5 0.5 1"
+            begin="0s"
+          ></animate>
+          <animate
+            attributeName="fill"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="discrete"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="#e15b64;#abbd81;#f8b26a;#f47e60;#e15b64"
+            begin="0s"
+          ></animate>
+        </circle>
+        <circle cx="16" cy="50" r="10" fill="#e15b64">
+          <animate
+            attributeName="r"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="spline"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="0;0;10;10;10"
+            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+            begin="0s"
+          ></animate>
+          <animate
+            attributeName="cx"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="spline"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="16;16;16;50;84"
+            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+            begin="0s"
+          ></animate>
+        </circle>
+        <circle cx="50" cy="50" r="10" fill="#f47e60">
+          <animate
+            attributeName="r"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="spline"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="0;0;10;10;10"
+            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+            begin="-0.25s"
+          ></animate>
+          <animate
+            attributeName="cx"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="spline"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="16;16;16;50;84"
+            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+            begin="-0.25s"
+          ></animate>
+        </circle>
+        <circle cx="84" cy="50" r="10" fill="#f8b26a">
+          <animate
+            attributeName="r"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="spline"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="0;0;10;10;10"
+            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+            begin="-0.5s"
+          ></animate>
+          <animate
+            attributeName="cx"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="spline"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="16;16;16;50;84"
+            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+            begin="-0.5s"
+          ></animate>
+        </circle>
+        <circle cx="16" cy="50" r="10" fill="#abbd81">
+          <animate
+            attributeName="r"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="spline"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="0;0;10;10;10"
+            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+            begin="-0.75s"
+          ></animate>
+          <animate
+            attributeName="cx"
+            repeatCount="indefinite"
+            dur="1s"
+            calcMode="spline"
+            keyTimes="0;0.25;0.5;0.75;1"
+            values="16;16;16;50;84"
+            keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+            begin="-0.75s"
+          ></animate>
+        </circle>
+      </svg>
+    </div>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <h1><a href="#">STUDENT</a> - <a href="./index.html">TEACHER</a></h1>
+        </div>
+        <div class="action">
+          <input type="checkbox" class="toggle-dark" />
+        </div>
+      </div>
+    </nav>
+    <div class="teacher-modal">
+      <p class="close-modal">&times;</p>
+      <form class="modal-body">
+        <h1 class="modal-title">Add Student</h1>
+        <div class="sps"></div>
+        <div class="row">
+          <div>
+            <label for="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="custom-input"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="sps"></div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input
+              type="text"
+              name="lastName"
+              id="lastName"
+              class="custom-input"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+        <div class="sps"></div>
+        <label for="avatar">Avatar</label>
+        <input
+          type="text"
+          id="avatar"
+          name="avatar"
+          class="custom-input"
+          placeholder="Avatar Img Url"
+          required
+        />
+        <div class="sps"></div>
+        <label for="field">Field</label>
+        <input
+          type="text"
+          id="field"
+          name="field"
+          class="custom-input"
+          placeholder="Field"
+          required
+        />
+        <div class="sps"></div>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          class="custom-input"
+          placeholder="Email"
+          required
+        />
+        <div class="sps"></div>
+        <label for="phoneNumber">Phone Number</label>
+        <input
+          type="text"
+          id="phoneNumber"
+          name="phoneNumber"
+          class="custom-input"
+          placeholder="Phone Number"
+          required
+        />
+        <div class="sps"></div>
+        <div class="sps"></div>
+
+        <div class="row">
+          <select id="doesWork">
+            <option value="doesWork?">Does Work?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <input
+            type="date"
+            id="birthdate"
+            placeholder="choose your Birthdate"
+          />
+        </div>
+        <div class="sps"></div>
+        <center><button class="addTeacherUi">Add Student</button></center>
+      </form>
+    </div>
+    <section class="search_add">
+      <div class="container">
+        <div class="row">
+          <select id="sortBirthdate">
+            <option>Sort by Birthdate</option>
+            <option value="asc">0-1</option>
+            <option value="desc">1-0</option>
+          </select>
+          <select id="sortByWork">
+            <option>Sort by doesWork</option>
+            <option value="all">All</option>
+            <option value="work">Work</option>
+            <option value="doesn't work">Doesn't Work</option>
+          </select>
+          <button class="open-modal addTeacherUi">Add Student</button>
+        </div>
+      </div>
+    </section>
+    <section class="info" id="info">
+      <div class="container">
+        <h3>All Students: <span class="allStudents"></span></h3>
+      </div>
+    </section>
+    <section class="students" id="students">
+      <div class="container">
+        <div class="students-row"></div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+    <script src="./js/const.js"></script>
+    <script src="./js/request.js"></script>
+    <script src="./js/student.js"></script>
+  </body>
+</html>

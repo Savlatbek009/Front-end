@@ -1,0 +1,83 @@
+.dark {
+  transition: 0.2s all;
+  background: rgb(61, 61, 61);
+  color: #fff;
+}
+.dark nav {
+  background: #313131;
+  box-shadow: rgba(146, 146, 146, 0.35) 0px 5px 15px;
+}
+.dark .logo a {
+  color: #fff !important;
+}
+.dark .teacher-modal {
+  background: rgba(0, 0, 0, 0.569);
+}
+.dark .modal-body {
+  background: rgb(61, 61, 61);
+}
+.dark .search_add input {
+  color: #fff;
+}
+.dark select {
+  color: #fff;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 6px 12px -2px,
+    rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
+}
+.dark option {
+  background: #313131;
+}
+.toggle-dark {
+  --size: 2.325rem;
+  --width: calc(2.325rem * 2);
+  display: inline-grid;
+  align-items: center;
+  width: var(--width);
+  height: var(--size);
+  cursor: pointer;
+}
+
+.toggle-dark::before {
+  content: "☀️🌙";
+  font-size: 1.6rem;
+  grid-area: 1 / -1;
+  padding: 1px;
+  width: var(--width);
+  height: var(--size);
+  transition: all 250ms ease;
+  border-radius: var(--width);
+  background-color: #000;
+}
+
+.toggle-dark:hover::before {
+  box-shadow: 0 0 0 2px #aef;
+}
+
+.toggle-dark::after {
+  content: "";
+  grid-area: 1 / -1;
+  width: calc(var(--size) * 0.9);
+  height: calc(var(--size) * 0.9);
+  transform: translateX(10%);
+  transform-origin: center center;
+  transition: all 250ms ease;
+  border-radius: 100%;
+  background: #fff;
+}
+
+.toggle-dark:checked::before {
+  background-color: rgb(252, 2, 2);
+}
+
+.toggle-dark:checked::after {
+  transform: translateX(calc(var(--width) - var(--size) * 0.9));
+}
+
+.toggle-dark:disabled {
+  pointer-events: none;
+  filter: grayscale(1);
+}
+
+.toggle-dark:disabled::before {
+  background: rgb(78, 238, 34);
+}
