@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>AS QR</title>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="row">
+        <div onclick="location.href = '/create-qr.html'" class="col">
+          <img
+            src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://as-qr.netlify.app"
+            alt=""
+          />
+          <h3><span class="keyword">QR</span> creator</h3>
+        </div>
+        <div onclick="location.href = '/scan-qr.html'" class="col">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpswVHqhb7n2NMwH5pkwkBaM3WiVD23m4nBA&usqp=CAU"
+            alt=""
+          />
+          <h3><span class="keyword">QR</span> scaner</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
