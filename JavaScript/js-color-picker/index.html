@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.pngitem.com/pimgs/m/405-4052523_an-image-of-a-color-picker-icon-over.png"
+      type="image/x-icon"
+    />
+    <title>Color Picker || AS</title>
+  </head>
+  <body
+    style="
+      background: rgb(10, 169, 235);
+      background: linear-gradient(
+        90deg,
+        rgba(10, 169, 235, 1) 0%,
+        rgba(0, 64, 136, 1) 100%
+      );
+    "
+  >
+    <div class="container">
+      <h1 class="app-title">Color Picker</h1>
+      <center>
+        <input type="color" value="#2acaea" class="color-picker" />
+      </center>
+      <div class="row">
+        <div class="col">
+          <p class="hex">hex</p>
+        </div>
+        <div class="col">
+          <p class="rgb">rgb</p>
+        </div>
+      </div>
+      <center>
+        <button class="apply">Set as background</button>
+      </center>
+    </div>
+    <div class="noti">
+      <p>copied</p>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
