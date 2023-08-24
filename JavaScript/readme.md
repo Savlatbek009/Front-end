@@ -1,9 +1,10 @@
 <h1 align="center">🔗 Link of Projects 🔗</h1>
-<h3 align="center">Count of Projects in JS: 14</h3>
+<h3 align="center">Count of Projects in JS: 15</h3>
 <hr />
 <h4 align="start">js-browser - https://as-brouser-js.netlify.app</h4>
 <h4 align="start">js-crm - https://as-teachers.netlify.app</h4>
 <h4 align="start">js-qr - https://as-qr.netlify.app</h4>
+<h4 align="start">js-color-picker - https://as-color-picker.netlify.app</h4>
 <h4 align="start">js-battery - https://as-battery.netlify.app</h4>
 <h4 align="start">js-todo - https://astodo01.netlify.app</h4>
 <h4 align="start">js-paint - https://as-paint.netlify.app</h4>
