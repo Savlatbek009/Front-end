@@ -1,5 +1,5 @@
 <h1 align="center">🔗 Link of Projects 🔗</h1>
-<h3 align="center">Count of Projects in ReactJS: 8</h3>
+<h3 align="center">Count of Projects in ReactJS: 9</h3>
 <hr />
 <h4 align="start">react-browser - https://as-all-browser.netlify.app</h4>
 <h4 align="start">react-input-generator - https://as-generator.netlify.app</h4>
