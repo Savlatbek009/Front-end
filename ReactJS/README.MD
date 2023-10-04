@@ -1,9 +1,12 @@
 <h1 align="center">🔗 Link of Projects 🔗</h1>
-<h3 align="center">Count of Projects in ReactJS: 9</h3>
+<h3 align="center">Count of Projects in ReactJS: 12</h3>
 <hr />
 <h4 align="start">react-browser - https://as-all-browser.netlify.app</h4>
 <h4 align="start">react-input-generator - https://as-generator.netlify.app</h4>
+<h4 align="start">react-debt-manager - https://as-debts.netlify.app</h4>
+<h4 align="start">react-mini-ecommerce - https://as-ecommerce.netlify.app</h4>
 <h4 align="start">react-mini-youtube - https://as-mini-youtube.netlify.app</h4>
+<h4 align="start">react-blog - https://as-post.vercel.app</h4>
 <h4 align="start">react-pass-maker - https://react-pass-maker.netlify.app/</h4>
 <h4 align="start">react-quiz-app - https://tom-onlinee.netlify.app</h4>
 <h4 align="start">react-repsipt-spa - https://as-spa-react.netlify.app</h4>
